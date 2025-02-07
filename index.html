@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 id="text"></h1>
 </body>
+<script>
+    const codeText = document.querySelector("#text")
+    const code = ["1", "5", "8", "3", "1", "7", "5", "I used to play snake in these when i was bored. Golden days."]
+
+    for (i in code) {
+        codeText.textContent = code[i]
+    }
+</script>
 </html>
