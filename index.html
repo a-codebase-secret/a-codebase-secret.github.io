@@ -13,8 +13,8 @@
     const codeText = document.querySelector("#text")
     const code = ["1", "5", "8", "3", "1", "7", "5", "I used to play snake in these when i was bored. Golden days."]
 
-    for (i in code) {
-        codeText.textContent = code[i]
+    for (let i = 0; i < 8; i++) {
+        setTimeout(() => { codeText.textContent = code[i]; }, i * 1000);
     }
 </script>
 </html>
